@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubConfigComponent } from './github-config/github-config.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GithubConfigComponent
+    GithubConfigComponent,
+    ConfigurationComponent
   ],
   imports: [
     BrowserModule,
