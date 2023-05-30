@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GithubConfigComponent } from './github-config/github-config.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { ConfigurationGithubComponent } from './configuration-github/configuration-github.component';
+import { ConfigurationOfGithubComponent } from './configuration-of-github/configuration-of-github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubConfigComponent,
     ConfigurationComponent,
-    ConfigurationGithubComponent
+    ConfigurationGithubComponent,
+    ConfigurationOfGithubComponent
   ],
   imports: [
     BrowserModule,
