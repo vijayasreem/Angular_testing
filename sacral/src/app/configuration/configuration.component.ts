@@ -12,6 +12,11 @@ export class ConfigurationComponent implements OnInit {
   ngOnInit() {
   }
 
-  error:string = `'NoneType' object has no attribute 'replace'`;
+  // Error Handling
+  handleError(error: any) {
+    if (error && error.hasOwnProperty('replace')) {
+      return error.replace('NoneType', 'String');
+    }
+  }
 
 }
