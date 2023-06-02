@@ -1,0 +1,31 @@
+﻿<form [formGroup]="configureForm" (ngSubmit)="onSubmit()" novalidate>
+  <div class="form-group">
+    <label for="username">GitHub Username</label>
+    <input formControlName="username" type="text" class="form-control" id="username">
+  </div>
+  <div class="form-group">
+    <label for="password">GitHub Password</label>
+    <input formControlName="password" type="password" class="form-control" id="password">
+  </div>
+  <div class="form-group">
+    <label for="url">GitHub URL</label>
+    <input formControlName="url" type="text" class="form-control" id="url">
+  </div>
+  <div class="form-group">
+    <label for="repoName">GitHub Repository Name</label>
+    <input formControlName="repoName" type="text" class="form-control" id="repoName">
+  </div>
+  <div class="form-group">
+    <label for="noOfEntries">Show Entries</label>
+    <select formControlName="noOfEntries" class="form-control" id="noOfEntries">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary" [disabled]="!configureForm.valid">Save</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+  </div>
+</form>
